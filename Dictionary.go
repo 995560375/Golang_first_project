@@ -100,6 +100,7 @@ func search(word string) {
 	if err != nil {
 		log.Fatal(err)
 	}
+	fmt.Println(resp)
 	if resp.StatusCode != 200 {
 		log.Fatal("bad status code:", resp.StatusCode, bodyText)
 	}
