@@ -108,6 +108,7 @@ func search(word string) {
 	if err != nil {
 		log.Fatal(err)
 	}
+	fmt.Println(dicResponse)
 	fmt.Println(word, "UK:", dicResponse.Dictionary.Prons.En, "US:", dicResponse.Dictionary.Prons.EnUs)
 	for _, item := range dicResponse.Dictionary.Explanations {
 		fmt.Println(item)
